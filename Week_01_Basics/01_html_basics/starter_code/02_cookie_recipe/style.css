@@ -1,0 +1,28 @@
+body {
+	background: #FFE;
+	border: 3px solid black;
+	margin: 0;
+	padding: 20px;
+}
+img {
+	border: 3px solid black;
+}
+h1 {
+	font-family: Georgia, serif;
+}
+
+h2 {
+	font-family: sans-serif;
+}
+h3{
+	text-transform: uppercase;
+}
+
+section {
+	color: #887;
+}
+
+section a {
+	color: #900;
+}
+
