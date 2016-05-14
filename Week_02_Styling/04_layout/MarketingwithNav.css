@@ -1,0 +1,76 @@
+body {
+	margin: 10%;
+	max-width: 960px;
+}
+
+section {
+	clear: both;
+	width: 960px;
+	overflow: none;
+}
+.placeholder {
+	background-color: gray;
+	border: 0.5px solid black;
+	height: 100%;
+}
+.menu {
+	background-color: gray;
+	width: auto;
+	height: 50px;
+	margin: 10px;
+	float: right;
+	width: 100px;
+}
+
+.logo {
+	width: 18%;
+	float: left;
+	height: 100px;
+}
+.nav {
+	padding-left: 10%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	float: right;
+	width: 58%;
+	margin: 2%;
+}
+ul {
+	list-style: none;
+}
+.nav ul {
+	margin-top: 0;
+}
+
+.nav li {
+	margin-top: 0;
+}
+
+.main {
+	width: auto;
+	height: 200px;
+}
+.firstColumn {
+	margin: 7.5px;
+	width: 300px;
+	float: left;
+	height: 100px;
+}
+.secondColumn {
+	margin: 7.5px;
+	width: 300px;
+	float: left;
+	height: 100px;
+}
+.thirdColumn {
+	margin: 7.5px;
+	width: 300px;
+	float: right;
+	height: 100px;
+}
+.footer {
+	width: auto;
+	height: 100px;
+	clear: both;
+}
+

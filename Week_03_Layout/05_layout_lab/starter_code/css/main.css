@@ -1,0 +1,174 @@
+ /* Globals */
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: gray;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+a {
+	color: red;
+	text-decoration: none;
+}
+
+article {
+	border-bottom: solid gray 1px;
+	padding: 10px;
+
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.dropcap {
+	display: block;
+	padding: 0 5px 5px 0;
+	font-size: 40px;
+	float: left;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+/* Header */
+
+header {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+header .logo {
+	font-size: 40px;
+	color: red;
+	font-weight: 100;
+}
+
+header .logo span {
+	color: grey;
+	font-size: 16px;
+}
+
+/* Main Nav */
+
+header nav ul {
+	padding-left: 0;
+}
+header nav li {
+	display: block;
+	margin: 1px;
+	float: left;
+}
+
+header nav li a {
+	padding: 15px 40px 15px 40px;
+	background-color: black;
+	color: white;
+}
+
+/* Main Content */
+
+section .main {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.mainContent {
+	width: 600px;
+	float: left;
+	margin-right: 10px;
+}
+
+/* Articles */
+
+.mainContent article time {
+	font-size: 32px;
+	padding-bottom: 5px;
+}
+
+.mainContent article h1 {
+	font-size: 28px;
+	color: black;
+	font-weight: 100;
+	padding-bottom: 5px;
+}
+
+article p {
+	line-height: 1.4;
+}
+
+.mainContent article a {
+	text-align: right;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: block;
+}
+
+/* Aside */
+
+.aside {
+	width: 300px;
+	float: right;
+}
+
+/* Ad */
+
+.ad {
+	padding: 80px;
+	font-weight: bold;
+	color: grey;
+	background: lightgrey;
+	display: block;
+	text-align: center;
+	font-size: 40px;
+}
+
+.ad:hover {
+	color:red;
+	background:white;
+}
+
+/* Footer */
+
+footer {
+	clear: both;
+	padding-top: 20px;
+}
+
+/* Footer Nav */
+footer nav ul {
+	padding-left: 0;
+}
+footer nav li{
+	display: block;
+	padding: 0 5px 0 5px;
+	float: left;
+	border-right: solid 1px grey;
+}
+footer nav li:first-child a {
+    padding-left: 0;
+}
+
+footer nav li:last-child a {
+    border-right: none;
+}
+footer p {
+	clear: both;
+	padding-top: 15px;
+}

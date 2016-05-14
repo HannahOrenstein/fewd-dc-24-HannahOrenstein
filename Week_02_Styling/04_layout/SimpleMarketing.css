@@ -1,0 +1,60 @@
+body {
+	margin: 10%;
+}
+
+section {
+	clear: both;
+	width: auto;
+	overflow: none;
+}
+
+.placeholder {
+	background-color: gray;
+	border: 0.5px solid black;
+	height: 100%;
+}
+
+.header {
+	width: auto;
+	margin: 1%;
+	overflow: none;
+	height: 100px;
+}
+
+.secondBox {
+	margin: 1%;
+	width: 48%;
+	float: left;
+	height: 300px;
+}
+
+.thirdBox {
+	margin: 1%;
+	width: 48%;
+	float: right;
+	height: 300px;
+}
+.firstColumn {
+	margin: 1%;
+	width: 31%;
+	float: left;
+	height: 100px;
+}
+.secondColumn {
+	margin: 1%;
+	width: 31%;
+	float: left;
+	height: 100px;
+}
+.thirdColumn {
+	margin: 1%;
+	width: 31%;
+	float: right;
+	height: 100px;
+}
+.footer{
+	width: auto;
+	margin: 1%;
+	overflow: none;
+	height: 100px;
+}

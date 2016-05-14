@@ -1,0 +1,44 @@
+body {
+	margin: 2%;
+}
+
+h1 {
+	font-family: sans-serif;
+}
+
+.placeholder {
+	background-color: gray;
+	border: 0.5px black solid;
+	height: 100px;
+}
+
+.header {
+	margin: 1%;
+	width: auto;
+	overflow: none;
+}
+
+.leftColumn {
+	margin: 1%;
+	width: 21%;
+	float: left;
+}
+
+.middleColumn {
+	margin: 1%;
+	width: 52%;
+	float: left;
+}
+
+.rightColumn {
+	margin: 1%;
+	width: 21%;
+	float: right;
+}
+
+.footer {
+	margin: 1%;
+	width: auto;
+	overflow: none;
+	clear: both;
+}
