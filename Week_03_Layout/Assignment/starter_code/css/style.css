@@ -58,7 +58,7 @@ img {
 .container {
 	width: 980px;
 	margin: 0 auto;
-	padding: 60px 0 60px 0;
+	padding: 30px 0 50px 0;
 }
 
 header {
@@ -85,9 +85,9 @@ header nav ul li {
 
 header li a {
 	color: #f9e42e;
-	padding-left: 30px;
+	padding-left: 40px;
+	font-weight: 100;
 }
-
 .main {
 	margin-top: 40px;
 }
