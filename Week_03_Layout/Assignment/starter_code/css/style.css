@@ -14,3 +14,179 @@
      line-height: 0;
      height: 0;
 }
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #606161;
+	background-color: #f0efef;
+	font-size: 24px;
+	line-height: 1.2;
+}
+
+a {
+	text-decoration: none;
+	color: #033048;
+	font-weight: 600;
+}
+img {
+	width: 100%;
+}
+
+.dropcap {
+	font-size: 80px;
+	font-weight: 600;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	float: left;
+}
+
+.logo {
+	font-weight: 800;
+	color: white;
+	font-size: 48px;
+}
+
+.container {
+	width: 980px;
+	margin: 0 auto;
+	padding: 60px 0 60px 0;
+}
+
+header {
+	background-color: #033048;
+	display: block;
+	padding-bottom: 40px;
+}
+
+header .logo {
+	float: left;
+	vertical-align: baseline;
+}
+
+header nav {
+	padding-left: 10px;
+	float: right;
+	vertical-align: baseline;
+	margin-top: 15px;
+}
+
+header nav ul li {
+	display:inline-block;
+}
+
+header li a {
+	color: #f9e42e;
+	padding-left: 30px;
+}
+
+.main {
+	margin-top: 40px;
+}
+.mainContent {
+	width: 700px;
+	margin-right: 20px;
+	float: left;
+	padding-bottom: 60px;
+}
+
+.post {
+	border-bottom: solid black 0.5px;
+	padding-bottom: 20px;
+}
+
+.mainContent a {
+	font-weight: 800;
+	display: block;
+	text-align: right;
+	padding-top: 20px;
+	font-size: 24px;
+}
+
+.mainContent h1 {
+	font-weight: 600;
+	color: #033048;
+	line-height: 1.4;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 40px;
+}
+
+.mainContent img {
+	padding: 10px 0 10px 0;
+}
+
+aside {
+	width: 240px;
+	float: right;
+	clear: none;
+	line-height: 1;
+}
+
+aside article {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+aside h1 {
+	font-weight: 800;
+	color: #033048;
+	padding-bottom: 20px;
+	font-size: 32px;
+}
+
+aside li a {
+	font-weight: 300;
+	color: black;
+	line-height: 1.4;
+}
+
+aside a {
+	font-size: 22px;
+	font-weight: 600;
+}
+
+
+.signUp {
+	clear: both;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #f9e42e;
+}
+
+.btn {
+	border-radius: 4px;
+	color: white;
+	font-weight: 800;
+	background-color: #033048;
+	padding: 12px 65px 12px 65px;
+	display: inline-block;
+}
+
+footer {
+	text-align: center;
+	background-color: black;
+}
+footer .logo {
+	color: #f9e42e;
+	padding-bottom: 30px;
+}
+
+footer ul {
+	padding-bottom: 20px;
+}
+footer li {
+	display: inline-block;
+	padding: 30px;
+}
+
+footer li a {
+	color: blue;
+}
+
+.copyright {
+	font-size: 18px;
+	font-weight: 600;
+	color: white;
+}
+
