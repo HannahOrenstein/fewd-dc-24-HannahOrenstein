@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  /* Globals */
 
 body {
@@ -5,6 +6,15 @@ body {
 	color: gray;
 	font-weight: 300;
 	font-size: 14px;
+=======
+/* Globals */
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: grey;
+>>>>>>> origin/master
 }
 
 .container {
@@ -12,15 +22,28 @@ body {
 	max-width: 960px;
 	margin: 0 auto;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 a {
 	color: red;
 	text-decoration: none;
 }
 
+<<<<<<< HEAD
 article {
 	border-bottom: solid gray 1px;
 	padding: 10px;
 
+=======
+a:hover {
+	color: green;
+}
+
+article {
+	border-bottom: 1px solid lightgray;
+>>>>>>> origin/master
 }
 
 img {
@@ -29,10 +52,19 @@ img {
 }
 
 .dropcap {
+<<<<<<< HEAD
 	display: block;
 	padding: 0 5px 5px 0;
 	font-size: 40px;
 	float: left;
+=======
+	font-size: 76px;
+	line-height: .8;
+	display: block;
+	float: left;
+	padding-right: 5px;
+	padding-bottom: 5px;
+>>>>>>> origin/master
 }
 
 .clearfix:after {
@@ -44,6 +76,7 @@ img {
      height: 0;
      }
 .clearfix { display: inline-block; }
+<<<<<<< HEAD
 
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
@@ -64,6 +97,30 @@ header .logo {
 header .logo span {
 	color: grey;
 	font-size: 16px;
+=======
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+
+
+/* Header */
+
+header {
+	padding-top: 15px;
+	padding-bottom: 40px;
+}
+
+header .logo {
+	font-size: 76px;
+	color: red;
+	display: inline-block;
+	font-weight: normal;
+}
+
+header .logo span {
+	font-size: 35px;
+	color: lightgray;
+>>>>>>> origin/master
 }
 
 /* Main Nav */
@@ -71,6 +128,7 @@ header .logo span {
 header nav ul {
 	padding-left: 0;
 }
+<<<<<<< HEAD
 header nav li {
 	display: block;
 	margin: 1px;
@@ -124,12 +182,65 @@ article p {
 
 .aside {
 	width: 300px;
+=======
+
+header nav li {
+	display: inline-block;
+}
+
+header nav li a {
+	color: lightgray;
+	background: black;
+	padding: 10px 50px;
+	display: block;
+	transition: background 3.25s ease;
+}
+
+header nav li a:hover {
+	color: white;
+	background: red;
+}
+/* Main Content */
+.mainContent {
+	width: 70%;
+	margin-right: 2%;
+	float: left;
+}
+
+
+/* Articles */
+article {
+	padding-bottom: 10px;
+	margin-bottom: 25px;
+}
+
+article time {
+	font-size: 20px;
+	color: lightgrey;
+}
+article h1 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: 300;
+	color: black;
+}
+
+.mainContent article a {
+	font-weight: bold;
+	text-align: right;
+	display: block;
+}
+/* Aside */
+aside {
+	width: 25%;
+>>>>>>> origin/master
 	float: right;
 }
 
 /* Ad */
 
 .ad {
+<<<<<<< HEAD
 	padding: 80px;
 	font-weight: bold;
 	color: grey;
@@ -172,3 +283,54 @@ footer p {
 	clear: both;
 	padding-top: 15px;
 }
+=======
+	display: block;
+	padding: 85px 85px;
+	background: lightgray;
+	color: gray;
+	text-align: center;
+	font-size: 40px;
+}
+.ad:hover {
+	background: red;
+	color: white;
+}
+
+/* Aside list items */
+
+/* Footer */
+
+/* Footer Nav */
+
+footer nav ul {
+    padding-left: 0;
+}
+
+footer nav li {
+    display: inline-block;
+}
+
+footer nav li a {
+    padding-right: 5px;
+    padding-left: 5px;
+    border-right: 1px solid gray;
+}
+
+footer nav li:first-child a {
+	padding-left: 0;
+}
+
+footer nav li:last-child a {
+	border-right: none;
+}
+
+
+
+
+
+
+
+
+
+
+>>>>>>> origin/master

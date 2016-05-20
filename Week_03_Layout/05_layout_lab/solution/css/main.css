@@ -1,3 +1,18 @@
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+
 body {
 	margin: 0;
 	font-family: 'Lato', sans-serif;
@@ -90,7 +105,6 @@ img {
 
 footer {
 	color: #BBB;
-	clear: both;
 }
 
 .menu-main,
