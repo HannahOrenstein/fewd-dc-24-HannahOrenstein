@@ -10,8 +10,8 @@ jQuery(document).ready(function () {
 	jQuery("p.readless").on("click",function(e){
 		e.preventDefault();
 		jQuery("#show-this-on-click").slideUp();
-		jQuery("p.readmore").show();
 		jQuery("p.readless").hide();
+		jQuery("p.readmore").show();
 	});
 
 	jQuery("a.learnmore").on("click",function(e){
