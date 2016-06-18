@@ -46,6 +46,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    width: 100%;
+}
+
 
 /******************************************
 /* LAYOUT
@@ -121,6 +125,7 @@ a {
     overflow: hidden;
     height: 140px;
     margin-bottom: 10px;
+    display: inline-block;
 }
 
 .breedImage {
