@@ -201,6 +201,11 @@ a {
   margin-top: 50px;
 }
 
+#buttonexpand {
+  background: #f9e42e;
+  text-align: center;
+}
+
 .relaxr-site-footer {
   background: #121212;
   padding: 65px 0 45px;

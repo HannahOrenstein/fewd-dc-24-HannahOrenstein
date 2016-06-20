@@ -19,4 +19,5 @@ jQuery(document).ready(function(){
     	jQuery("#learnmoretext").slideDown();
     	jQuery("a.learnmore").hide();
     });
+
 });
