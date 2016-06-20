@@ -7,7 +7,14 @@ h3{
   text-align: center;
 }
 
+<<<<<<< HEAD
 
+=======
+.purpleForm {
+  background-color: white;
+  color: purple;
+}
+>>>>>>> origin/master
 .redForm {
   background: red;
   color:white;
