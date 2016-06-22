@@ -95,6 +95,13 @@ header nav ul li a {
   color: #f9e42e;
 }
 
+#hamburger {
+  color: yellow;
+  padding: 20px;
+  float: right;
+  display: none;
+}
+
 #hero {
   height: 700px;
   background: url(../images/header_bg.jpg) no-repeat top center #131e27;
@@ -287,6 +294,125 @@ footer p {
   color: #fff;
   font-weight: 600;
 }
+
+@media only screen and (max-width: 1000px) {
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+  .logo {
+  font-size: 36px;
+  }
+  header {
+    padding: 10px 10px 10px;
+
+  }
+  header nav {
+    float: none;
+    display: none;
+  }
+  header nav ul{
+    width: 100%;
+    text-align: center;
+    margin: auto 0;
+  }
+
+  header nav ul li {
+    border-bottom: solid 1px white;
+    width: 100%;
+    margin: 0;
+    display: none;
+  }
+
+  #hamburger {
+    display: block;
+    border: none;
+    float: right;
+  }
+
+  .container {
+    width: 100%;
+  }
+  #hero {
+    height: auto;
+    margin: 0;
+    padding: 10px 20px 30px 20px;
+  }
+
+  #hero h2 {
+    font-size: 28px;
+    margin: 40px 0 60px;
+  }
+
+  #benefits {
+    padding: 50px 0 40px;
+    margin: 0 20px 0 20px;
+  }
+  #benefits p, #benefits ul  {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  #benefits ul {
+    list-style: disc;
+    margin: 10px 0 0 40px;
+  }
+
+  #benefits li {
+    width: 100%;
+    padding-right: 20px;
+  }
+
+  blockquote {
+    font-size: 100%;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  img {
+    width: 100%;
+  }
+
+  #posts {
+    width: 100%;
+  }
+  .post h2 {
+    font-size: 24px;
+  }
+
+  .post p {
+    font-size: 18px;
+  }
+  #sidebar {
+    width: 100%;
+    display: block;
+  }
+  #sidebar h3 {
+    font-size: 24px;
+  }
+  #sidebar p {
+    font-size: 18px;
+  }
+
+  .ad {
+    display:none;
+  }
+
+
+}
+
+
+
 
 
 

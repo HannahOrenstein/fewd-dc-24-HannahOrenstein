@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  $('header nav ul li:first-child').click(function(){
-    $(this).parent().toggleClass('slideDown');
+  $('#hamburger').click(function(){
+    $(this).addClass("active");
+    $("nav").slideDown();
   });
 });
