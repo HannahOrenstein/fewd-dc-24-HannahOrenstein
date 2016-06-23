@@ -3,9 +3,9 @@ jQuery(document).ready(function(){
 
 		if(jQuery(this).hasClass('active')){
 			jQuery(this).removeClass('active');
-			jQuery('nav').slideUp();
+			jQuery("header nav").slideUp();
 		} else {
-			jQuery("nav").slideDown();
+			jQuery("header nav").slideDown();
 			jQuery(this).addClass('active');
 		}
 	});

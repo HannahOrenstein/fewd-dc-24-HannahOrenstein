@@ -1,15 +1,18 @@
-<?php
-function spark_enqueue_scripts(){
-	//wp_enqueue_script('jqueryui');
-}
-add_action('wp_enqueue_scripts', 'spark_enqueue_scripts');
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
 
+    <meta charset="<?php bloginfo( 'charset' ); ?>" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Recipe for Toast</title>
 
-get_header();
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://use.typekit.net/rix0ith.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-?>
-
-<!-- Your HTML code goes here -->
+</head>
+<body>
 
 	<section class="featuredArticle" "clearfix">
 		<div class="featuredArticleImage">
@@ -53,16 +56,15 @@ get_header();
 	</section>
 
 	<section class="recipes" "clearfix">
-		<div class="recipesHeader"><img src="wp-content/themes/images/RECIPES_Header_Homepage.png" alt text="recipes" class="center"></div>
+		<div class="recipesHeader"><img src="wp-content/themes/images/RECIPES_Header_Homepage.png" alt text="recipes" align="center"></div>
 		<div class="recipeSlider">
 			<ul>
 				<li class="recipes"><div class="recipeImage"></div><h3>Recipe Title</h3></li>
-				<li class="recipes"><div class="recipeImage"></div><h3>Recipe Title</h3></li>
-				<li class="recipes"><div class="recipeImage"></div><h3>Recipe Title</h3></li>
+				<li class="recipes"><div class="recipeImage"><h3>Recipe Title</h3></div></li>
+				<li class="recipes"><div class="recipeImage"><h3>Recipe Title</h3></div></li>
 			</ul>
 		</div>
 	</section>
-<?php 
 
-get_footer();
-
+</body>
+</html>
