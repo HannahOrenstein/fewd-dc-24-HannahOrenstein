@@ -1,0 +1,154 @@
+@charset "UTF-8";/*!
+Theme Name: Recipe for Toast Theme
+*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */`
+
+body {
+	background-color: white;
+	font-family: "adelle",serif;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Header Styles */
+
+/* Universal Styles */
+
+h1 {
+	font-family: "scriptorama-tradeshow-jf",sans-serif;
+	font-size: 36px;
+}
+
+h2 {
+	font-family: "adelle",serif;
+	font-size: 24px;
+	font-weight: 800;
+}
+
+.author {
+	font-family: "adelle",serif;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+p .preview {
+	font-family: "adelle",serif;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+/* Homepage */
+
+section .featuredArticle {
+	width: 100%;
+	height: 400px;
+}
+
+section .featuredArticleImage {
+	width: 100%;
+	background-image: url(http://media.guestofaguest.com/t_article_content/wp-content/uploads/2014/01/69ada40a795911e390220ea2e16bf06c_81-300x300.jpg);
+	background-position: center center;
+	height: 350px;
+	padding: 50px 0 50px 0;
+	margin: 0 auto;
+}
+
+.titleBox {
+	width: 500px;
+    height: 275px;
+    background-color: orange;
+    border: black solid 2px;
+    margin: auto;
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+}
+
+section .recentArticles {
+	width: 850px;
+	height: 100%;
+	display: inline-block;
+	margin: auto 0;
+}
+
+section .articleBox {
+	padding: 100px;
+	width: 100%;
+	height: 400px;
+}
+
+section .articlePreviewLeft {
+	float: left;
+	height: 300px;
+	width: 600px;
+	text-align: left;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+section .articlePreviewRight {
+	float: right;
+	height: 200px;
+	width: 600px;
+	text-align: right;
+	margin-left: 50px;
+	margin-bottom: 50px;
+}
+
+section .articleImageLeft {
+	float: left;
+	height: 250px;
+	width: 200px;
+}
+
+section .articleImageRight {
+	float: left;
+	height: 250px;
+	width: 200px;
+}
+
+section .recipes {
+	width: 850px;
+	height: 100%;
+}
+
+.recipes h1 {
+	font-family: "balboa-plus-primary",sans-serif;
+	font-size: 48px;
+	color: black;
+	text-align: center;
+	clear:both;
+}
+
+.recipes li {
+	display: inline-block;
+	padding: 20px;
+}
+
+.recipes a:hover{
+
+}

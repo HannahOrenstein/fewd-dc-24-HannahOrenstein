@@ -19,6 +19,7 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #aaa;
+    margin: 0 auto;
 }
 
 a {
@@ -27,7 +28,7 @@ a {
 }
 
 .container {
-    width: 1100px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -191,6 +192,7 @@ span #hamburger {
     top: 5px;
 }
 
+<<<<<<< Updated upstream
 
 @media only screen and (max-width: 1000px) {
 
@@ -217,3 +219,74 @@ span #hamburger {
 
 
 
+=======
+#hamburgerMenu {
+    visibility: hidden;
+    color:yellow;
+    float: left;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        width: 100%;
+    }
+    .navigation {
+        display: none;
+        width: 100%;
+    }
+    .main-nav strong {
+        font-weight: normal;
+        font-size: 22px;
+        text-transform: none;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    #hamburgerMenu {
+        visibility: visible;
+    }
+    .hero {
+        width: 100%;
+    }
+
+    .block-heading {
+        color: red;
+    }
+    .block {
+        width: 100%;
+    }
+    .horizontal-nav li{
+        display: block;
+        text-align: center;
+    }
+    .horizontal-nav li:first-child {
+        font-weight: none;
+    }
+    .horizontal-nav li:second-child {
+        font-weight: none;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+
+    .navigation {
+        display: none;
+    }
+
+    #hamburgerMenu {
+        visibility: visible;
+    }
+
+    .block-heading {
+        color: red;
+    }
+
+}
+>>>>>>> Stashed changes
