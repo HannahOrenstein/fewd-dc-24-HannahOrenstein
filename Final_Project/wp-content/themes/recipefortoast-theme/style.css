@@ -186,10 +186,15 @@ section .recipes {
 .recipes li {
 	display: inline-block;
 	padding: 20px;
+<<<<<<< Updated upstream
 	height: 200px;
 	width: 200px;
 	text-align: center;
 	margin: 30px;
+=======
+	width: 200px;
+	margin: 20px;
+>>>>>>> Stashed changes
 }
 
 .recipeImage {
