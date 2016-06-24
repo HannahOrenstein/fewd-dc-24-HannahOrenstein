@@ -14,7 +14,6 @@ get_header();
 	<section class="featuredArticle" "clearfix">
 		<div class="featuredArticleImage">
 			<div class="titleBoxWrap">
-				<div class="titleBoxShadow"></div>
 				<div class="titleBox">
 					<h1>Avocado Toast</h1>
 					<h2>How A Humble Dish Took over the Internet</h2>
@@ -53,7 +52,7 @@ get_header();
 	</section>
 
 	<section class="recipes" "clearfix">
-		<div class="recipesHeader"><img src="wp-content/themes/images/RECIPES_Header_Homepage.png" alt text="recipes" class="center"></div>
+		<div class="recipesHeader"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/RECIPES_Header_Homepage.png" alt text="recipes" class="center"></div>
 		<div class="recipeSlider">
 			<ul>
 				<li class="recipes"><div class="recipeImage"></div><h3>Recipe Title</h3></li>

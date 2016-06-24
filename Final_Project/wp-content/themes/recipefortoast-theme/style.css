@@ -76,36 +76,50 @@ section .featuredArticle {
 
 section .featuredArticleImage {
 	width: 100%;
-	background-image: url(wp-content/themes/images/AvocadoToast.png);
+	background-image: url(images/AvocadoToast.png);
 	background-position: center center;
 	height: 360px;
 	padding: 50px 0 50px 0;
 	margin: 0 auto;
 }
 
+.titleBoxWrap:before {
+    content: "";
+    background: #ffc700;
+    width: 503px;
+    height: 268px;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+    position: absolute;
+}
+.titleBoxWrap:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 15px;
+    left: 15px;
+    background: rgba(255, 153, 0, .6);
+    z-index: 1;
+    height: 100%;
+}
 .titleBoxWrap {
-	width: 520px;
-	height: 285px;
-	margin: 0 auto;
+    width: 520px;
+    height: 285px;
+    background: #FF9900;
+    margin: 0 auto;
+    border: #231F20 solid 1px;
+    position: relative;
 }
-
-.titleBoxShadow {
-	width: 500px;
-    height: 275px;
-    padding: 10px 20px 20px 20px;
-    background-color : #FF9900;
-  	border: #231F20 solid 1px;
-  	position: relative;
-}
-
 .titleBox {
-    width: 500px;
-    height: 275px;
-    background-color: rgba(255, 199, 0, .25);
-    margin: 10px 0px 0px 10px;
-    padding: 10px 20px 20px 20px;
     text-align: center;
-    position: absolute; top:10%; left:20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    padding: 0 95px;
+    z-index: 3;
 }
 
 section .recentArticles {
@@ -144,7 +158,7 @@ section .articleImageLeft {
 	float: left;
 	height: 300px;
 	width: 300px;
-	background-image: url(wp-content/themes/images/potatoes.jpg);
+	background-image: url(images/potatoes.jpg);
 	background-position: center center
 }
 
@@ -152,7 +166,7 @@ section .articleImageRight {
 	float: right;
 	height: 300px;
 	width: 300px;
-	background-image: url(wp-content/themes/images/potatoes.jpg);
+	background-image: url(images/potatoes.jpg);
 	background-position: center center
 }
 
@@ -186,19 +200,14 @@ section .recipes {
 .recipes li {
 	display: inline-block;
 	padding: 20px;
-<<<<<<< Updated upstream
 	height: 200px;
 	width: 200px;
 	text-align: center;
 	margin: 30px;
-=======
-	width: 200px;
-	margin: 20px;
->>>>>>> Stashed changes
 }
 
 .recipeImage {
-	background-image: url(wp-content/themes/images/potatoes.jpg);
+	background-image: url(images/potatoes.jpg);
 	background-position: center center
 
 }
