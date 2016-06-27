@@ -6,28 +6,45 @@ add_action('wp_enqueue_scripts', 'spark_enqueue_scripts');
 
 
 get_header();
+		if ( have_posts() ) {
+					    while ( have_posts() ) {
+					     the_post();
+
 
 ?>
-<h1>This is a page</h1>
-<?php
-// Loop
-if ( have_posts() ) :
 
-    while ( have_posts() ) : the_post();
 
-		the_title();
-		the_content();
+<?php the_title(); ?>
 
-    endwhile;
+<section class="hero">
+	<div class="row">
+		<div class="col-md-12">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
 
-else :
+		<?php
+		// Loop
 
-    echo 'Not Found.';
 
-endif;
-?>
+				the_content();
 
+
+		
+		?>
+		</div>
+	</div>
+</section>
+
+<!-- page.php -->
 <?php 
+		    }
 
+}else{
+
+		    echo 'Not Found.';
+
+}
 get_footer();
 

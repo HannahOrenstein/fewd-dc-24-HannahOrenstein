@@ -223,6 +223,14 @@ footer p {
   color: #fff;
   font-weight: 600;
 }
-
+.relaxr {
+  padding-right: 40px;
+}
+.btn-relaxr {
+  background-color: #121212;
+  border-radius: 6px;
+  font-weight: 800;
+  color: white;
+}
 
 

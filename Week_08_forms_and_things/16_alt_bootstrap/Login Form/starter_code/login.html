@@ -49,12 +49,105 @@
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="home">
             <!-- current users here -->
+
+        <form>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-sm-2">
+                        <label for="inputEmail1">Email</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+                    </div>
+                </div>
+            </div><!--end of row-->
+
+            <div class="row">
+              <div class="form-group">
+                 <div class="col-sm-2">
+                <label for="password">Password</label>
+                </div>
+                <div class="col-sm-10">
+                <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+            <div class="col-sm-10 col-sm-offset-2">
+              <button type="submit" class="btn btn-primary btn-lg btn-relaxr">Sign In</button>
+              </div>
+            </div>
+        </form>
+
         </div>
-
-
 
         <div role="tabpanel" class="tab-pane" id="profile">
             <!-- new users here -->
+
+            <form>
+               <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-2">
+                             <label for="inputEmail1">Email</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+                        </div>
+                    </div>
+              </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="firstName">First Name</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="firstName" class="form-control" id="firstName" placeholder="First Name">
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="">Last Name</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="lastName" class="form-control" id="lastName" placeholder="Last Name">
+                        </div>
+                    </div>
+              <div class="form-group">
+                    <div class="row">
+                         <div class="col-sm-2">
+                            <label for="">Password</label>
+                         </div>
+                         <div class="col-sm-4">
+                             <input type="password" class="form-control" id="password" placeholder="Password">
+                         </div>
+                        <div class="col-sm-2">
+                            <label for="">Confirm</label>
+                         </div>
+                        <div class="col-sm-4">
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+                        </div>
+                    </div>
+                 </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for"">User Type</label>
+                </div>
+                 <div class="col-sm-10">
+                    <div class="btn-group" data-toggle="buttons">
+                          <label class="btn btn-primary active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Employer
+                          </label>
+                          <label class="btn btn-primary">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Talent
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-offset-2">
+                <button type="submit" class="btn btn-primary btn-lg btn-relaxr">Sign up</button>
+             </div>
+            </div>
+            </div>
+        </form>
         </div>
     </div>
     </div>

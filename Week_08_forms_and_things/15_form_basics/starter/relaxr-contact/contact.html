@@ -3,16 +3,57 @@
 <head>
 	<meta charset="UTF-8">
 
+
 	<title>Relaxr Blog</title>
-	
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="960_12_col.css">
+	<link rel="stylesheet" href="styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 	<!--
 	Link to Normalize CSS, Google Fonts (http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800), 960 Grid CSS, and your style sheet.
 	-->
 
 </head>
 <body>
-
-
+		<header class="container_12">
+				<div class="grid_3">
+					<h1 class="logo">Relaxr</h1>
+				</div>
+				<div class="grid_9">
+					<nav id="#navigation">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="blog.html">Blog</a></li>
+						</ul>
+					</nav>
+				</div>
+		</header>
+		<section id="form" class="container_12">
+			<div class="grid_8">
+				<h1>Contact Us</h1>
+				<fieldset>
+				<legend>Account Info</legend>
+					<form method="post">
+								<label for="Name">Name</label>
+								<input type="text" id="name" name="name" required/>
+								<label for="Company">Company</label>
+								<input type="text" id="company" name="company" required/>
+								<label for="Email">Email</label>
+								<input type="text" id="email" name="email" required/>
+						</fieldset>
+						<fieldset>
+						<legend>Project Info</legend>
+								<label for="projectInfo">Project Description</label>
+									<textarea rows="3" columns="60" id="message" required/></textarea>
+						<input type="submit" value="Send Message"/>
+						</fieldset>
+					</form>
+			</div>
+			<div class="grid_4">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+			</div>
+		</section>
 	
 </body>
 </html>
