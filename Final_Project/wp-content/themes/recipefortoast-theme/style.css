@@ -73,6 +73,46 @@ img{
 	float: left;
 }
 
+/* Header */
+
+
+.chevron {
+  position: relative;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 3px;
+  width: 100%;
+}
+
+.chevron:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  -webkit-transform: skew(0deg, 2deg);
+  -moz-transform: skew(0deg, 2deg);
+  -ms-transform: skew(0deg, 2deg);
+  -o-transform: skew(0deg, 2deg);
+  transform: skew(0deg, 2deg);
+}
+.chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  -webkit-transform: skew(0deg, -2deg);
+  -moz-transform: skew(0deg, -2deg);
+  -ms-transform: skew(0deg, -2deg);
+  -o-transform: skew(0deg, -2deg);
+  transform: skew(0deg, -2deg);
+}​
+
 
 /* Homepage */
 
