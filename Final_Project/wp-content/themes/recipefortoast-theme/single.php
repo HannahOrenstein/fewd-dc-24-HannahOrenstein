@@ -13,14 +13,27 @@ get_header();
 
 ?>
 
-
-<div><h1><?php the_title(); ?></h1></div>
-
 <section class="hero">
 	<div class="row">
 		<div class="col-md-12">
+		<?php 
+
+		$image = get_field('image');
+
+		if( !empty($image) ): ?>
+
+			<img class="articleImage" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+		<?php endif; ?>
 		</div>
+		<div class="rft_articleTitle"><h1><?php the_title(); ?></h1></div>
 	</div>
+</section>
+<article class="rft_article">
+		<div><h2 class="author">
+		<?php the_field('author_name'); ?>
+			
+		</h2></div>
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3">
 
@@ -35,8 +48,7 @@ get_header();
 		?>
 		</div>
 	</div>
-</section>
-
+</article>
 <!-- page.php -->
 <?php 
 		    }
