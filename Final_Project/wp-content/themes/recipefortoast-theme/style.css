@@ -69,56 +69,29 @@ p {
 	float: left;
 }
 
-/* Header */
+/* Navigation */
 
-
-.chevron {
-  position: relative;
-  text-align: center;
-  padding: 30px;
-  margin-bottom: 3px;
-  width: 100%;
-}
-
-.chevron:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: white;
-  -webkit-transform: skew(0deg, 2deg);
-  -moz-transform: skew(0deg, 2deg);
-  -ms-transform: skew(0deg, 2deg);
-  -o-transform: skew(0deg, 2deg);
-  transform: skew(0deg, 2deg);
-}
-.chevron:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  background: white;
-  -webkit-transform: skew(0deg, -2deg);
-  -moz-transform: skew(0deg, -2deg);
-  -ms-transform: skew(0deg, -2deg);
-  -o-transform: skew(0deg, -2deg);
-  transform: skew(0deg, -2deg);
-}​
-
-.header a {
+.logo {
+	font-size: 48px;
+	font-family: "balboa-plus-primary",sans-serif;
 	color: black;
-	font-family: "adelle", serif;
-    font-size: 24px;
-    color: black;
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
 }
 
+.mainNavigation {
+	background-color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-left: 20px;
+	color: black;
+	border: none;
+	font-family: "adelle",serif;
+	font-size: 18px;
+}
+
+.navbar-nav li{
+	padding-left: 10px;
+	padding-right: 10px;
+}
 /* Homepage */
 
 section .featuredArticle {
@@ -276,23 +249,22 @@ section .recipes {
 }
 
 /* Articles */
-.articleImage {
-	width: 100%;
-	position: relative;
+.hero {
+	width:100%;
 }
-.rft_articleTitle {
-	color: white;
-	clear: both;
-	position: absolute; 
-   	top: 200px; 
-   	left: 0; 
-   	width: 100%; 
+.rft_articleTitle h1{
+	font-family: "balboa-plus-primary",sans-serif;
+	color: black; 
 }
 
-.rft_article h2 {
-	margin-left: 100px;
+.rft_article .author{
+	font-size: 18px;
 	padding-top: 20px;
-	padding-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    color: black;
+    border-top: 0.01em solid grey;
+    border-bottom: 0.01em solid grey;
 }
 
 .rft_article img {
@@ -300,3 +272,13 @@ section .recipes {
 	max-width: 800px;
 }
 
+.rft_article blockquote p{
+	float: left;
+	color: black;
+	font-size: 24px;
+	font-family: "adelle",serif;
+	font-weight: 900;
+	padding: 10px;
+	margin: 30px 30px 30px 0;
+	width: 45%;
+}
