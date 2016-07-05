@@ -8,7 +8,7 @@ add_action('wp_enqueue_scripts', 'spark_enqueue_scripts');
 get_header();
 
 ?>
-<h1>This is a page</h1>
+<h1>Test</h1>
 <?php
 // Loop
 if ( have_posts() ) :

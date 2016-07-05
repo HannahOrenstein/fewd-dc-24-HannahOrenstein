@@ -9,7 +9,7 @@ get_header();
 
 ?>
 
-<h1>These are posts</h1>
+<h1>Test</h1>
 <?php
 
 // Loop
