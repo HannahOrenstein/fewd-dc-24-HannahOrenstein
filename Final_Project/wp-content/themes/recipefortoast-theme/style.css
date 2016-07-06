@@ -32,8 +32,9 @@ body {
 /* Universal Styles */
 
 h1 {
-	font-family: "scriptorama-tradeshow-jf",sans-serif;
+	font-family: "adelle",sans-serif;
 	font-size: 42px;
+	font-weight: 900;
 }
 
 h2 {
@@ -55,7 +56,11 @@ p {
 	font-weight: 300;
 }
 
-.preview {
+li {
+	display: inline-block;
+}
+
+/*.preview {
 	font-family: "adelle",serif;
 	font-size: 18px;
 	font-weight: 300;
@@ -67,7 +72,7 @@ p {
 
 .left {
 	float: left;
-}
+}*/
 
 /* Navigation */
 
@@ -96,7 +101,6 @@ p {
 
 section .featuredArticle {
 	width: 100%;
-	height: 400px;
 }
 
 section .featuredArticleImage {
@@ -106,6 +110,7 @@ section .featuredArticleImage {
 	height: 360px;
 	padding: 50px 0 50px 0;
 	margin: 0 auto;
+	margin-bottom: 20px;
 }
 
 .titleBoxWrap:before {
@@ -148,8 +153,9 @@ section .featuredArticleImage {
 }
 
 section .recentArticles {
-	width: 850px;
-	margin: 0 auto;
+	  display: block;
+  	  margin: 0 auto;
+      width: 850px;
 }
 
 section .articleBox {
@@ -160,39 +166,23 @@ section .articleBox {
     margin: 0 auto;
 }
 
-section .articlePreviewLeft {
-	float: left;
-	height: 300px;
-	width: 500px;
+div .articlePreview {
 	text-align: left;
-	margin-bottom: 50px;
-	margin-right: 40px;
 }
 
-section .articlePreviewRight {
+div .articlePreviewRight {
 	float: right;
-	height: 300px;
-	width: 500px;
 	text-align: right;
 	margin-left: 40px;
 	margin-bottom: 50px;
 	overflow: none;
 }
 
-section .articleImageLeft {
-	float: left;
-	height: 300px;
-	width: 300px;
-	background-image: url(images/potatoes.jpg);
-	background-position: center center
+div .articleImage {
 }
 
-section .articleImageRight {
+div .articleImageRight {
 	float: right;
-	height: 300px;
-	width: 300px;
-	background-image: url(images/potatoes.jpg);
-	background-position: center center
 }
 
 section .recipes {

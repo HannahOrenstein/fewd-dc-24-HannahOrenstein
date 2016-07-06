@@ -37,10 +37,9 @@ get_header();
 		<div class="col-md-11 col-md-offset-1">
 			<h2 class="rft_article author">By 
 			<?php the_field('author_name'); ?>
-			&#x02016; <?php 
-				$date = get_field('date', false, false);
-				$date = new DateTime($date);?>
-				<?php echo $date->format('M j, Y'); ?></h2>
+			&#x02016;
+				 
+<?php the_time( get_option( 'date_format' ) ); ?></h2>
 		</div>
 	<div class="row">
 		<div class="rft_article col-md-7 col-md-offset-2">
