@@ -1,4 +1,9 @@
 <?php
+/*
+Template Name Posts: Recipes
+*/?>
+
+<?php
 function spark_enqueue_scripts(){
 	//wp_enqueue_script('jqueryui');
 }
@@ -42,8 +47,17 @@ get_header();
 <?php the_time( get_option( 'date_format' ) ); ?></h2>
 		</div>
 	<div class="row">
-		<div class="rft_article col-md-7 col-md-offset-2">
-
+		<div class="rft_recipe col-md-7 col-md-offset-2">
+			<h2 class="rft_recipe"><?php the_field('recipe_description');?></h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="rft_recipe col-md-2 col-md-offset-2">
+		<h1 class="rft_recipe">Ingredients</h1>
+			<span class="ingredients"><?php the_field('recipe_ingredients');?></span>
+		</div>
+		<div class="rft_recipe col-md-5">
+		<h1 class="rft_recipe">Recipe</h1>
 		<?php
 		// Loop
 
@@ -56,13 +70,18 @@ get_header();
 		</div>
 	</div>
 </article>
+
 <div class="postNavBox">
 	<div class="postNav">
 		<h1>Enjoy More Toast:</h1>
-		<div class="postNavLeft"><?php previous_post_link('&laquo; %link', '%title', TRUE, 'category'); ?></div>
-		<div class="postNavRight"><?php next_post_link( '%link &raquo;', '%title', TRUE, 'category'); ?></div>
+		<span class="postNavLeft"><?php previous_post_link('&laquo; %link', '%title', TRUE, 'category'); ?></span>
+		<span class="postNavRight"><?php next_post_link( '%link &raquo;', '%title', TRUE, 'category'); ?></span>
 	</div>
 </div> <!-- end navigation -->
+
+</div>
+
+
 <!-- page.php -->
 <?php 
 		    }

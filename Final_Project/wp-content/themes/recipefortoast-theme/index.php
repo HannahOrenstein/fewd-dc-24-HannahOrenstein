@@ -8,13 +8,6 @@ add_action('wp_enqueue_scripts', 'spark_enqueue_scripts');
 get_header();
 
 ?>
-<section class="hero">
-	<div class="row">
-		<div class="col-md-12">
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-6 col-md-offset-3">
 		<?php
 
 
@@ -35,9 +28,6 @@ else :
 endif;
 
 		?>
-		</div>
-	</div>
-</section>
 <?php
 
 

@@ -1,8 +1,14 @@
 
-
-
+</div>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
-<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/main.js"></script>
-<?php wp_footer();
+<footer <?php wp_footer();?>>
+	<nav class="navbar rft_footer">
+	<ul>
+		<li class="rft_footer"><a href="http://www.recipefortoast.com/">Recipe for Toast</a></li>
+		<li class="rft_footer"><a href="http://www.recipefortoast.com/features">Features</a></li>
+		<li class="rft_footer"><a href="http://www.recipefortoast.com/recipes">Recipes</a></li>
+		<li class="rft_footer"><a href="http://www.recipefortoast.com/about">About</a></li>
+	</ul>
+	</nav>
+</footer>
+</html>

@@ -1,6 +1,6 @@
-@charset "UTF-8";/*!
-Theme Name: Recipe for Toast Theme
+/*Theme Name: Recipe for Toast Theme
 */
+
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -20,247 +20,312 @@ Theme Name: Recipe for Toast Theme
 .clearfix { display: block; }
 /* close commented backslash hack */`
 
-body {
+.rft body {
 	background-color: white;
 	font-family: "adelle",serif;
 	width: 100%;
 	margin: 0 auto;
 }
 
-/* Header Styles */
-
 /* Universal Styles */
 
-h1 {
-	font-family: "adelle",sans-serif;
-	font-size: 42px;
-	font-weight: 900;
+img.alignright { 
+	float: right; 
+	margin: 0 -3em 1.2em 1.2em; 
+}
+img.alignleft { 
+	float: left; 
+	margin: 0 1.2em 1.2em -3em; 
+}
+img.aligncenter { 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
+.alignright img { 
+	float: right; 
+	margin: 0 -3em 1.2em 1.2em; 
+}
+.alignleft img{ 
+	float: left; 
+	margin: 0 1.2em 1.2em -3em; 
+}
+.aligncenter img{ 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
+.alignright { 
+	float: right; 
+}
+.alignleft { 
+	float: left; 
+}
+.aligncenter { 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
 }
 
-h2 {
+.rft h1 {
+	font-family: "lexia-advertising",sans-serif;
+	font-size: 22px;
+}
+
+.rft h1 a {
+	color: black;
+}
+
+
+.rft h2 {
 	font-family: "adelle",serif;
-	font-size: 24px;
+	font-size: 16px;
 	font-weight: 800;
 }
 
-p {
+.rft p {
 	line-height: 2;
 	font-family: "adelle",serif;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 300;
 }
 
-.author {
+.rft .author {
 	font-family: "adelle",serif;
-	font-size: 18px;
+	font-size: 12px;
 	font-weight: 300;
 }
 
-li {
+.articlePreview {
 	display: inline-block;
 }
 
-/*.preview {
+p .preview {
 	font-family: "adelle",serif;
-	font-size: 18px;
+	font-size: 12px;
 	font-weight: 300;
+	line-height: 1.4;
 }
 
-.right {
-	float: right;
-}
+/* Header Styles */
 
-.left {
-	float: left;
-}*/
+/* Main Navigation */
 
-/* Navigation */
-
-.logo {
+.rft .logo {
 	font-size: 48px;
 	font-family: "balboa-plus-primary",sans-serif;
 	color: black;
+	position: relative;
+	z-index: 0;
 }
 
-.mainNavigation {
+.rft .logo:hover::before {
+	font-family: "balboa-plus-fill",sans-serif;
+	color: #ffdc00;
+	content:"Recipe For Toast";
+	position: absolute;
+	z-index: 1;
+}
+
+.rft .mainNavigation {
 	background-color: white;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	margin-left: 20px;
+	padding-top: 2em;
+	margin-left: 2em;
 	color: black;
 	border: none;
 	font-family: "adelle",serif;
-	font-size: 18px;
+	font-size: 1.4em;
 }
 
 .navbar-nav li{
 	padding-left: 10px;
 	padding-right: 10px;
 }
-/* Homepage */
 
-section .featuredArticle {
-	width: 100%;
+.navbar-nav li a {
+	border-bottom: black solid .1em;
 }
 
-section .featuredArticleImage {
+.searchbar {
+	float: right;
+}
+
+.form-control {
+	border: solid black .11em;
+	border-radius: 0;
+}
+
+.rft_btn {
+	border:solid black .11em;
+	border-radius: 0;
+	background-color: white;
+}
+
+.rft_btn:hover {
+	border:solid black .11em;
+	border-radius: 0;
+	background-color: #ffdc00;
+}
+/* Post Navigation */
+.postNav h1 {
+	font-family: "balboa-plus-fill",sans-serif;
+	color: black;
+}
+
+.postNavBox {
 	width: 100%;
-	background-image: url(images/AvocadoToast.png);
-	background-position: center center;
-	height: 360px;
-	padding: 50px 0 50px 0;
 	margin: 0 auto;
+	padding: 3em;
+}
+
+.postNav {
+	border: solid black .13em;
+	padding: 1em 1em 3em 1em;
+	width: 50em;
+	margin: 0 auto;
+	text-align:center;
+}
+
+.postNav div {
+	width: 15em;
+	display: inline-block;
+}
+.postNavLeft {
+	text-align: right;
+	padding-right: 2em;
+	border-right: solid black .03em;
+	vertical-align: middle
+}
+
+.postNavRight {
+	text-align: left;
+	padding-left: 2em;
+	vertical-align: middle;
+}
+
+.postNav a{
+	color: black;
+	text-decoration: underline;
+}
+
+/* Homepage */
+
+.featuredArticle {
+	height: 400px;
+	overflow: hidden;
 	margin-bottom: 20px;
 }
 
-.titleBoxWrap:before {
-    content: "";
-    background: #ffc700;
-    width: 503px;
-    height: 268px;
-    top: 15px;
-    left: 15px;
-    z-index: 2;
-    position: absolute;
+.featuredArticle .row {
+	height: 40em;
 }
-.titleBoxWrap:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    top: 15px;
-    left: 15px;
-    background: rgba(255, 153, 0, .6);
-    z-index: 1;
-    height: 100%;
-}
-.titleBoxWrap {
-    width: 520px;
-    height: 285px;
-    background: #FF9900;
-    margin: 0 auto;
-    border: #231F20 solid 1px;
-    position: relative;
-}
+
 .titleBox {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%,-50%);
-    padding: 0 95px;
-    z-index: 3;
+	position: absolute;
+	top: 7em;
+	text-align: center;
+	width: 40%;
+	margin-right: 30%;
+	margin-left: 30%;
+	padding: 2em;
+	z-index: 2;
+	background-color: white;
 }
 
-section .recentArticles {
-	  display: block;
-  	  margin: 0 auto;
-      width: 850px;
+.featuredArticle h1 {
+	color: #FFDC00;
+	font-size: 2.8em;
 }
 
-section .articleBox {
-	padding: 100px 0 0 0;
-    width: 850px;
-    height: 400px;
-    display: block;
-    margin: 0 auto;
+.featuredArticle h1 a {
+	color: #FFDC00;
+    letter-spacing: .06em;
 }
 
-div .articlePreview {
-	text-align: left;
-}
-
-div .articlePreviewRight {
-	float: right;
-	text-align: right;
-	margin-left: 40px;
-	margin-bottom: 50px;
-	overflow: none;
-}
-
-div .articleImage {
-}
-
-div .articleImageRight {
-	float: right;
-}
-
-section .recipes {
-	padding-top: 50px;
-	width: 850px;
-	height: 100%;
+.featuredArticleImage {
+	width: 100%;
 	margin: 0 auto;
+	position: absolute;
+	z-index: -1;
 }
 
-.recipesHeader img {
-	display: block;
-	padding-right: 25%; 
-	padding-left: 25%;
-    margin: 0 auto;
+.previewImage {
+	width: 100%;
 }
 
-.recipes h1 {
-	font-family: "balboa-plus-primary",sans-serif;
+.imageBox {
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+
+.recentArticles h3 {
 	font-size: 48px;
+	font-family: "balboa-plus-primary",sans-serif;
 	color: black;
 	text-align: center;
-	clear:both;
+	padding: .5em;
+}
+.recentArticles .row {
+	  display: block;
+	  width: 1170px;
+      padding-bottom: 1em;
+      padding-top: 2em;
+      margin: 0 auto;
 }
 
-.recipeSlider {
-	margin: 0 auto;
-	width: 860px;
+.articlePreview {
+	border-left: .1em solid grey;
 }
 
-.recipes li {
-	display: inline-block;
-	padding: 20px;
-	height: 200px;
-	width: 200px;
-	text-align: center;
-	margin: 30px;
-}
-
-.recipeImage {
-	background-image: url(images/potatoes.jpg);
-	background-position: center center
-
-}
-
-.recipes h3 {
-	font-family: "adelle",serif;
-	color: white;
-	font-size: 36px;
-	text-transform: lowercase;
-}
-
-.recipes li:hover{
-	background-color: #f2344d;
+.articlePreview:first-child {
+	border-left: none;
 }
 
 /* Articles */
-.hero {
+.rft_articleHeaderImage {
 	width:100%;
+	height: 30em;
+	overflow: hidden;
+	position: absolute;
 }
+
+.hero {
+	width: 100%;
+}
+
 .rft_articleTitle h1{
-	font-family: "balboa-plus-primary",sans-serif;
-	color: black; 
+	font-family: "lexia-advertising",sans-serif;
+    color: white;
+    font-size: 2.8em;
+    position: relative;
+    margin-top: 7.5em;
+    margin-bottom: 1.5em;
+    display: block;
+    text-shadow: .09em .07em black;
+    letter-spacing: .06em;
+    border-bottom: .1em #ffdc00 solid;
+    text-transform: uppercase;
+    padding: .2em;
 }
 
 .rft_article .author{
 	font-size: 18px;
-	padding-top: 20px;
-    padding-bottom: 20px;
+	padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
     text-transform: uppercase;
     color: black;
     border-top: 0.01em solid grey;
     border-bottom: 0.01em solid grey;
 }
 
-.rft_article img {
-	margin-left: -100px;
-	max-width: 800px;
+.rft_article p {
+	line-height: 2;
+	font-size: 16px;
 }
+
 
 .rft_article blockquote p{
 	float: left;
@@ -269,6 +334,97 @@ section .recipes {
 	font-family: "adelle",serif;
 	font-weight: 900;
 	padding: 10px;
-	margin: 30px 30px 30px 0;
+	margin: 0 1.2em 1.2em -3em; 
 	width: 45%;
+	border-bottom: solid black 1.3em;
+	border-left: 0;
 }
+
+.rft_article .wp-caption-text {
+	font-size: 1em;
+	float: inherit;
+}
+/* Recipes */
+
+.rft_recipe h1 {
+	font-family: "lexia-advertising",sans-serif;
+	font-size: 20px;
+	padding-bottom: .2em;
+	padding-top: .2em;
+	border-top: .1em dotted black;
+}
+
+.rft_recipe h2 {
+	font-family: "adelle",sans-serif;
+	font-size: 20px;
+	padding-bottom: .2em;
+	padding-top: .2em;
+}
+
+.rft_recipe li {
+	font-family: "adelle",serif;
+	line-height: 2;
+	font-size: 16px;
+}
+
+.rft_recipe li:before {
+	content:"  ";
+	padding-right: 1em;
+	margin-right: -1em;
+}
+
+.ingredients {
+	font-size: .9em;
+	line-height: 1.6;
+	font-family: "adelle",serif;
+}
+
+/* Recipe Archive */
+
+.recipeArchive {
+	  display: block;
+      width: 850px;
+      margin-bottom: 5%;
+      margin-top: 5em;
+}
+
+.recipeArchivePreview {
+	border-bottom: .2em dotted black;
+	padding-top: 1em;
+	width: 100%;
+}
+
+.archiveTitle {
+	font-family: "lexia-advertising",sans-serif;
+	font-size: 20px;
+	width: 100%;
+	padding-bottom: .2em;
+	padding-top: .2em;
+	border-bottom: .1em solid black;
+}
+
+/* Footer */
+footer {
+	background-color: black;
+	padding: 3em;
+}
+.rft_footer li {
+	font-family: "adelle",serif;
+	color: white;
+	font-size: 1em;
+	list-style-type: none;
+	padding: 2em;
+	display: inline-block;
+}
+
+.rft_footer a {
+	color: white;
+	display: inline-block;
+}
+
+.rft_footer a:hover {
+	color: yellow;
+	text-decoration: underline;
+}
+
+
