@@ -21,14 +21,14 @@ get_header();
 						?>
 						<?php while ($featuredArticle->have_posts()) : $featuredArticle->the_post(); ?>
 			
-						   <a href="<?php the_permalink() ?>" rel="bookmark"><div class="featuredArticleImage"><?php 
+						  <div class="featuredArticleImage"><?php 
 
 								$image = get_field('image');
 
 								if( !empty($image) ): ?>
 
-									<img class="hero" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-							</div></a><!--article image -->
+									 <a href="<?php the_permalink() ?>" rel="bookmark"><img class="hero" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
+							</div><!--article image -->
 							    		
 							    		<div class="titleBox">
 							    		<h1><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
@@ -43,7 +43,7 @@ get_header();
 
 <section class="recentArticles">
 <div class="row">
-<div class="col-md-12">
+<div class="col-sm-12">
 	<span><h3 class="title">Recent Articles</h3></span>
 <ul>
 						<?php
@@ -51,7 +51,7 @@ get_header();
 						    $recentPosts->query('posts_per_page=2&category_name=article');
 						?>
 						<?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
-						<li class="col-md-6 articlePreview">
+						<li class="col-sm-6 articlePreview">
 						    	
 
 						    <div class="imageBox"><?php 
@@ -77,7 +77,7 @@ get_header();
 
 <section class="recentArticles">
 <div class="row">
-<div class="col-lg-12">
+<div class="col-sm-12">
 		<span><h3 class="title">Recipes</h3></span>
 <ul>
 						<?php
@@ -87,7 +87,7 @@ get_header();
 						<?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
 
 
-						<li class="col-lg-4 articlePreview">
+						<li class="col-sm-4 articlePreview">
 						    	
 
 						    <div class="imageBox"><?php 

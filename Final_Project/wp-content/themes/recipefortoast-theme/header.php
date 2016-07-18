@@ -32,7 +32,12 @@
                               <li><a href="http://www.recipefortoast.com/about">About</a></li>  
                         </ul>
                         <div class="form-group searchbar">
-                         <?php get_search_form();?>
+                         <form class="navbar-form navbar-left" role="search" action="/">
+                           <div class="form-group">
+                             <input type="text" name="s" id="s" class="form-control" placeholder="Search">
+                           </div>
+                         <button type="submit" class="btn rft_btn">Submit</button>
+                        </form>
                         </div>
                   </div>
                 </div>

@@ -1,6 +1,22 @@
-<!--comment--><form class="navbar-form navbar-left" role="search" action="/">
-        <div class="form-group">
-          <input type="text" name="s" id="s" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn rft_btn">Submit</button>
-</form>
+<?php
+/*
+Template Name: Search Page
+*/
+?>
+
+<?php
+function spark_enqueue_scripts(){
+	//wp_enqueue_script('jqueryui');
+}
+add_action('wp_enqueue_scripts', 'spark_enqueue_scripts');
+
+
+get_header();
+
+
+?>
+
+<?php get_search_form(); ?>
+
+
+<?php get_footer();

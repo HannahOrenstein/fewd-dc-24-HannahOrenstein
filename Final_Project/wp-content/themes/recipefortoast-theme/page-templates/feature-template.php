@@ -1,4 +1,9 @@
 <?php
+/*
+Template Name Posts: Feature
+*/?>
+
+<?php
 function spark_enqueue_scripts(){
 	//wp_enqueue_script('jqueryui');
 }
@@ -56,13 +61,6 @@ get_header();
 		</div>
 	</div>
 </article>
-<div class="postNavBox">
-	<div class="postNav">
-		<h1>Enjoy More Toast:</h1>
-		<div class="postNavLeft"><?php previous_post_link('&laquo; %link', '%title', TRUE, 'category'); ?></div>
-		<div class="postNavRight"><?php next_post_link( '%link &raquo;', '%title', TRUE, 'category'); ?></div>
-	</div>
-</div> <!-- end navigation -->
 <!-- page.php -->
 <?php 
 		    }

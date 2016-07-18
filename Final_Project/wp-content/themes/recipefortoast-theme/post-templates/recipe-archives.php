@@ -16,7 +16,7 @@ get_header();
 <!-- Your HTML code goes here -->
 <section class="recipeArchive row">
 <div class="col-md-11 col-md-offset-2">
-<span><h3 class="archiveTitle">Articles</h3></span>
+<span><h3 class="archiveTitle">Recipes</h3></span>
 <ul>
 						<?php
 						    $recipePosts = new WP_Query();
