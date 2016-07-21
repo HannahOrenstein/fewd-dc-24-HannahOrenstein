@@ -12,6 +12,13 @@ get_header();
 
 
 ?>
+<<<<<<< HEAD
+=======
+<h1>Test</h1>
+<?php
+// Loop
+if ( have_posts() ) :
+>>>>>>> origin/master
 
 
 <?php the_title(); ?>

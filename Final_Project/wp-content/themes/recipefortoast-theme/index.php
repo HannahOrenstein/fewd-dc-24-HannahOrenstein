@@ -10,6 +10,11 @@ get_header();
 ?>
 		<?php
 
+<<<<<<< HEAD
+=======
+<h1>Test</h1>
+<?php
+>>>>>>> origin/master
 
 // Loop
 if ( have_posts() ) :
